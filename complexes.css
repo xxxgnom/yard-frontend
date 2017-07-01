@@ -1,0 +1,76 @@
+.blackstripe {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  background-color: #161616;
+}
+.mainblock {
+  padding-top: 4rem;
+  padding-bottom: 2.8rem;
+  background-image: url(img/background-1.png);
+  background-repeat: repeat;
+}
+
+.contacttitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3e4247;
+}
+
+.contacttext {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.btncontact {
+  padding: 0.75rem 2rem;
+  margin-bottom: 4rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.0;
+  color: #ffffff;
+  text-align: center;
+  background-color: #000000;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.complexcard {
+  display: flex;
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+  border-bottom: solid 2px #646971;
+  cursor: pointer;
+  text-decoration: none;
+}
+.complexcardimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.complexcard:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.complexcardinfo {
+  padding: 1.5rem 2rem;
+}
+.complexcardplace {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  font-family: Monaco, Menlo, Consolas, monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #646971;
+}
+.complexcardadress {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #000000;
+}
+.complexcarddescription {
+  line-height: 1.5;
+  color: #3e4247;
+}

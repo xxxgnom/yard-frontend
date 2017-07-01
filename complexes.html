@@ -1,116 +1,108 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="./flexboxgrid.css">
-	<link rel="stylesheet" href="./normalize.css">
-	<meta charset="utf-8">
-	<title>Complexes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Complexes</title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Philosopher:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link rel="stylesheet" href="header-footer-style.css">
+  <link rel="stylesheet" href="complexes.css">
 </head>
-<!-- Начало страницы -->
-<body class="body">
-	<header class="header">
-		<div class="headercontainer">
-		<img class="compasslogo" src='./img/compass-logo.png'>
-	  <nav class="headerlinks">
-	    <a class="headerlink" href="#">Купить</a>
-	    <a class="headerlink" href="#">Снять</a>
-	    <a class="headerlink" href="#">Наши агенты</a>
-	  </nav>
-	</div>
-	</header>
 
-	<section class="banner">
-		<img class="bannerimage" src="img/compass-development-logo.svg">
-	</section>
-
-	<section class="development-section">
-	      <div class="container">
-	        <div class="row center-lg">
-	          <div class="col-lg-8">
-	            <h2 class="development-title">Discover Our New Developments</h2>
-	            <p class="development-description">
-	              Compass brings a modern approach to new development marketing and sales. From boutique rental conversions to luxurious ground-up condominiums, browse our portfolio of current offerings.
-	            </p>
-	            <button class="development-contact-button">Contact The Team</button>
-	          </div>
-	        </div>
-	      </div>
-	 </section>
-
-			<main class="content">
-	      <div class="container">
-	        <a class="complex-link" href="#">
-	          <img class="complex-photo" src="./img/bitmap.jpg" srcset="./img/bitmap@2x.jpg 2x, ./img/bitmap@3x.jpg 3x" alt="764 Metropolitan Avenue photo">
-	          <div class="complex-info">
-	            <p class="complex-city">SOUTH BEACH, SAN FRANCISCO</p>
-	            <h3 class="complex-title">764 Metropolitan Avenue</h3>
-	            <p class="complex-description">
-	              The Lewis Steel Building is a masterful industrial conversion located in the heart of Williamsburg. Located at 76 North 4th Street, the former 1930's steel factory has been transformed into 83 individually unique and luxury loft apartments.
-	            </p>
-	          </div>
-	        </a>
-					<a class="complex-link" href="#">
-						<img class="complex-photo" src="./img/bitmap.jpg" srcset="./img/bitmap@2x.jpg 2x, ./img/bitmap@3x.jpg 3x" alt="100 East 53rd Street">
-						<div class="complex-info">
-							<p class="complex-city">MIDTOWN EAST, MANHATTAN</p>
-							<h3 class="complex-title">100 East 53rd Street</h3>
-							<p class="complex-description">
-								One Hundred East Fifty Third Street by Foster + Partners is a limited collection of modern residences in Midtown Manhattan's Cultural District. The 94 residences ranging from alcove lofts to four bedrooms within the 63-story tower are generously proportioned.
-							</p>
-						</div>
-					</a>
-					<a class="complex-link" href="#">
-						<img class="complex-photo" src="./img/bitmap.jpg" srcset="./img/bitmap@2x.jpg 2x, ./img/bitmap@3x.jpg 3x" alt="152 Elizabeth">
-						<div class="complex-info">
-							<p class="complex-city">NOLITA, MANHATTAN</p>
-							<h3 class="complex-title">152 Elizabeth</h3>
-							<p class="complex-description">
-								152 Elizabeth is an ultra-luxury condominium building—the first in New York City designed by Japanese master architect Tadao Ando. Located at the corner of Kenmare and Elizabeth Streets in Nolita, the 32,000-square-foot building will stand as a profound architectural statement and embrace the industrial character of the neighborhood.
-							</p>
-						</div>
-					</a>
+<body class="complexes-body">
+  <header class="header">
+    <div class="container">
+      <div class="row middle-xs between-xs">
+        <img src="img/compass-logo.svg" class="header-logo">
+        <nav class="main-nav">
+          <a class="main-nav-link" href="#">Купить</a>
+          <a class="main-nav-link" href="#">Снять</a>
+          <a class="main-nav-link" href="#">Наши агенты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+	<section class="blackstripe">
+    <img src="img/compass-development-logo.svg" class="blackstripelogo">
+  </section>
+	<main class="mainblock">
+		<div class="container">
+			<div class="row center-xs">
+				<div class="col-xs-8">
+					<h2 class="contacttitle">Discover Our New Developments</h2>
+					<p class="contacttext">Compass brings a modern approach to new development marketing and sales. From boutique rental conversions to luxurious ground-up condominiums, browse our portfolio of current offerings.</p>
+					<button class="btncontact" href="#">Contact the team</button>
 				</div>
-			</main>
+			</div>
 
-<footer class="footer">
-	<div class: "footerborders">
-	<div class="row">
-        <div class="col-md-2">
-          <h4 class="footer-caption">ООО «Ярд»</h4>
-          <p class="footer-text">ОГРН 1175074002531<br> ИНН 5036165365<br> +7 (999) 821-14-88</p>
-        </div>
-        <div class="col-md-2 col-md-offset-2">
-          <div class="footer-border-bottom">
-            <div class="footer-col">
-              <h4 class="footer-caption">Жилые комплексы</h4>
-              <p class="footer-list"><a href="#" class="footer-link ">ВТБ Арена Парк</a><br>
-              <a href="#" class="footer-link ">Садовые кварталы</a><br>
-              <a href="#" class="footer-link ">Резиденция Монэ</a><br>
-              <a href="#" class="footer-link ">Все ЖК Москвы <img src="img/combined-shape.png"></a></p>
-            </div>
+
+			<a class="complexcard" href="#">
+				<img src="img/bitmap.jpg" srcset="img/bitmap@2x.jpg 2x, img/bitmap@3x.jpg 3x" class="complexcardimg">
+				<article class="complexcardinfo">
+					<p class="complexcardplace">SOUTH BEACH, SAN FRANCISCO</p>
+					<h3 class="complexcardadress">764 Metropolitan Avenue</h3>
+					<p class="complexcarddescription">The Lewis Steel Building is a masterful industrial conversion located in the heart of Williamsburg. Located at 76 North 4th Street, the former 1930's steel factory has been transformed into 83 individually unique and luxury loft apartments.</p>
+				</article>
+			</a>
+			<a class="complexcard" href="#">
+				<img src="img/bitmap.jpg" srcset="img/bitmap@2x.jpg 2x, img/bitmap@3x.jpg 3x" class="complexcardimg">
+				<article class="complexcardinfo">
+					<p class="complexcardplace">SOUTH BEACH, SAN FRANCISCO</p>
+					<h3 class="complexcardadress">764 Metropolitan Avenue</h3>
+					<p class="complexcarddescription">The Lewis Steel Building is a masterful industrial conversion located in the heart of Williamsburg. Located at 76 North 4th Street, the former 1930's steel factory has been transformed into 83 individually unique and luxury loft apartments.</p>
+				</article>
+			</a><a class="complexcard" href="#">
+				<img src="img/bitmap.jpg" srcset="img/bitmap@2x.jpg 2x, img/bitmap@3x.jpg 3x" class="complexcardimg">
+				<article class="complexcardinfo">
+					<p class="complexcardplace">SOUTH BEACH, SAN FRANCISCO</p>
+					<h3 class="complexcardadress">764 Metropolitan Avenue</h3>
+					<p class="complexcarddescription">The Lewis Steel Building is a masterful industrial conversion located in the heart of Williamsburg. Located at 76 North 4th Street, the former 1930's steel factory has been transformed into 83 individually unique and luxury loft apartments.</p>
+				</article>
+			</a>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+          <div class="footercompany">
+            <h4 class="footer-title">ООО «Ярд»</h4>
+            <p class="footercompanytext">ОГРН 1175074002531</p>
+            <p class="footercompanytext">ИНН 5036165365</p>
+            <p class="footercompanytext">+7 (999) 821-14-88</p>
           </div>
         </div>
-        <div class="col-md-2">
-          <div class="footer-border-bottom">
-            <div class="footer-col">
-              <h4 class="footer-caption">Компания</h4>
-              <p class="footer-list"><a href="#" class="footer-link ">Команда</a><br>
-              <a href="#" class="footer-link ">О компании</a></p>
-            </div>
-          </div>
+        <div class="col-xs-2">
+          <nav class="footernav">
+            <h4 class="footer-title">Жилые комплексы</h4>
+            <a class="footer-link" href="#">ВТБ Арена Парк</a>
+            <a class="footer-link" href="#">Садовые кварталы</a>
+            <a class="footer-link" href="#">Резиденция Монэ</a>
+            <a class="footer-link footer-link-last" href="#">Все ЖК Москвы <img src="img/combined-shape.svg" class="blackstripelogo"></a>
+          </nav>
+        </div>
+        <div class="col-xs-2">
+          <nav class="footernav">
+            <h4 class="footer-title">Компания</h4>
+            <a class="footer-link" href="#">Команда</a>
+            <a class="footer-link" href="#">О компании</a>
+          </nav>
         </div>
       </div>
-
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-4">
-          <div class="copyright">
+        <div class="col-xs-8 col-xs-offset-4">
+          <div class="footer-disclaimer">
             <p>Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 ГК РФ. © ООО «Ярд», 2017</p>
           </div>
         </div>
       </div>
-			</div>
-</footer>
+    </div>
+	</footer>
 
 </body>
 </html>
