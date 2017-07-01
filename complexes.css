@@ -1,29 +1,26 @@
-.blackstripe {
+.intro {
   padding-top: 5rem;
   padding-bottom: 5rem;
   text-align: center;
   background-color: #161616;
 }
-.mainblock {
+.main {
   padding-top: 4rem;
   padding-bottom: 2.8rem;
   background-image: url(img/background-1.png);
   background-repeat: repeat;
 }
-
-.contacttitle {
+.contact-title {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
   color: #3e4247;
 }
-
-.contacttext {
+.contact-text {
   margin-bottom: 1rem;
   line-height: 1.5;
 }
-
-.btncontact {
+.contact-btn {
   padding: 0.75rem 2rem;
   margin-bottom: 4rem;
   font-family: 'Fira Sans', sans-serif;
@@ -44,18 +41,18 @@
   cursor: pointer;
   text-decoration: none;
 }
-.complexcardimg {
+.complexcard:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.complexcard-img {
   display: block;
   width: 100%;
   height: auto;
 }
-.complexcard:hover {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
-}
-.complexcardinfo {
+.complexcard-info {
   padding: 1.5rem 2rem;
 }
-.complexcardplace {
+.complexcard-place {
   margin: 0;
   margin-bottom: 1.5rem;
   font-family: Monaco, Menlo, Consolas, monospace;
@@ -70,7 +67,7 @@
   line-height: 1.4;
   color: #000000;
 }
-.complexcarddescription {
+.complexcard-description {
   line-height: 1.5;
   color: #3e4247;
 }

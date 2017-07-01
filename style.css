@@ -43,23 +43,19 @@ body {
   line-height: 1.5;
   color: #646971;
 }
-
-.footercompanytext {
+.footer-company-text {
   margin-bottom: 1rem;
   font-size: 14px;
   font-weight: 300;
   color: #a9afb6;
 }
-
-.footercompanytext:last-child {
+.footer-company-text:last-child {
   margin-top: 1.5rem;
 }
-
-.footernav {
+.footer-nav {
   padding-top: 1rem;
   border-top: solid 2px #3e4247;
 }
-
 .footer-link {
   display: block;
   margin-bottom: 1rem;
@@ -68,11 +64,9 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
-
 .footer-link-last {
   margin-top: 1.5rem;
 }
-
 .footer-disclaimer {
   padding-top: 4.5rem;
   font-size: 11px;
