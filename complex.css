@@ -14,7 +14,7 @@
   color: #a9afb6; /* Цвет шрифта */
   line-height: 1.57; /* высота строки */
 }
-.btn-favourite{
+.favourite-btn{
   padding: 0.5rem 1rem;
   font-family: 'Fira Sans', sans-serif;
   font-size: 10px;
@@ -30,7 +30,7 @@
 .gallery-stripe{
   display: flex;
 }
-.btn-photo-count{
+.photo-count-btn{
   position: absolute;
   margin-top: -2.5rem;
   padding: 0.5rem 1rem;
