@@ -3,8 +3,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
-const ComplexServices = styled.section`padding-bottom: 3.5rem;`;
-const ComplexServicesTitle = styled.h3`
+const Services = styled.section`padding-bottom: 3.5rem;`;
+const Title = styled.h3`
   margin: 0;
   margin-bottom: 0.9rem;
   padding-top: 2.15rem;
@@ -15,7 +15,7 @@ const ComplexServicesTitle = styled.h3`
   color: #3e4247;
   border-top: solid 1px #eaebf0;
 `;
-const ComplexServicesItem = styled.div`
+const Item = styled.div`
   margin-bottom: 0.5rem;
   font-size: 16px;
   line-height: 1.38;
@@ -23,34 +23,34 @@ const ComplexServicesItem = styled.div`
 `;
 function InfrastructureShow(props) {
   return (
-    <ComplexServices>
+    <Services>
       <Grid>
-        <ComplexServicesTitle>Инфраструктура</ComplexServicesTitle>
+        <Title>Инфраструктура</Title>
         <Row>
           <Col md={2}>
-            <ComplexServicesItem>Бассейн</ComplexServicesItem>
-            <ComplexServicesItem>Частная школа</ComplexServicesItem>
+            <Item>Бассейн</Item>
+            <Item>Частная школа</Item>
           </Col>
           <Col md={2}>
-            <ComplexServicesItem>Детский сад</ComplexServicesItem>
-            <ComplexServicesItem>Частная школа</ComplexServicesItem>
+            <Item>Детский сад</Item>
+            <Item>Частная школа</Item>
           </Col>
           <Col md={2}>
-            <ComplexServicesItem>Частная школа</ComplexServicesItem>
-            <ComplexServicesItem>Частная школа</ComplexServicesItem>
+            <Item>Частная школа</Item>
+            <Item>Частная школа</Item>
           </Col>
           <Col md={2}>
-            <ComplexServicesItem>Бассейн</ComplexServicesItem>
+            <Item>Бассейн</Item>
           </Col>
           <Col md={2}>
-            <ComplexServicesItem>Детский сад</ComplexServicesItem>
+            <Item>Детский сад</Item>
           </Col>
           <Col md={2}>
-            <ComplexServicesItem>Частная школа</ComplexServicesItem>
+            <Item>Частная школа</Item>
           </Col>
         </Row>
       </Grid>
-    </ComplexServices>
+    </Services>
   );
 }
 export default InfrastructureShow;

@@ -3,14 +3,14 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
-const ComplexName = styled.h1`
+const Name = styled.h1`
   margin: 0;
   padding-top: 1.5rem;
   font-family: 'Philosopher', sans-serif;
   font-weight: 700;
   line-height: 1;
 `;
-const ComplexAdress = styled.p`
+const Adress = styled.p`
   font-family: 'Fira Sans', sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -35,10 +35,10 @@ function TitleShow(props) {
     <Grid>
       <Row between="md">
         <article className="complex-location">
-          <ComplexName>Жилой комплекс «Полянка/44»</ComplexName>
-          <ComplexAdress>
+          <Name>Жилой комплекс «Полянка/44»</Name>
+          <Adress>
             Район Якиманка, улица Большая Полянка, дом 44 • 119180
-          </ComplexAdress>
+          </Adress>
         </article>
         <BtnFav>В избранное</BtnFav>
       </Row>

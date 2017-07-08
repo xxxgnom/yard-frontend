@@ -8,7 +8,7 @@ const ComplexOffers = styled.section`
   padding-bottom: 3.75rem;
   background-color: #f4f5f9;
 `;
-const ComplexOffersTitle = styled.h3`
+const OffersTitle = styled.h3`
   margin: 0;
   margin-bottom: 1.55rem;
   font-family: Philosopher, sans-serif;
@@ -18,11 +18,11 @@ const ComplexOffersTitle = styled.h3`
   color: #3e4247;
   text-align: center;
 `;
-const ComplexOffersCard = styled.div`
+const Card = styled.div`
   padding: 1.5rem 2rem;
   background-color: #ffffff;
 `;
-const ComplexOffersCardTitle = styled.h4`
+const CardTitle = styled.h4`
   margin: 0;
   margin-bottom: 1.4rem;
   font-family: Philosopher, sans-serif;
@@ -31,7 +31,7 @@ const ComplexOffersCardTitle = styled.h4`
   line-height: 1.1;
   color: #3e4247;
 `;
-const ComplexOffersCardKey = styled.small`
+const CardKey = styled.small`
   display: block;
   margin: 0;
   margin-bottom: 0.6rem;
@@ -39,7 +39,7 @@ const ComplexOffersCardKey = styled.small`
   line-height: 1.38;
   color: #a9afb6;
 `;
-const ComplexOffersCardValue = styled.p`
+const CardValue = styled.p`
   display: block;
   margin: 0;
   margin-top: 1.5rem;
@@ -67,55 +67,43 @@ function OffersShow(props) {
   return (
     <ComplexOffers>
       <Grid>
-        <ComplexOffersTitle>Предложения в ЖК «Полянка/44»</ComplexOffersTitle>
+        <OffersTitle>Предложения в ЖК «Полянка/44»</OffersTitle>
         <Row>
           <Col md={4}>
-            <ComplexOffersCard>
-              <ComplexOffersCardTitle>
-                1-комнатные квартиры
-              </ComplexOffersCardTitle>
-              <ComplexOffersCardValue>
-                <ComplexOffersCardKey>Площадь</ComplexOffersCardKey>от 59 до 120
-                м²
-              </ComplexOffersCardValue>
-              <ComplexOffersCardValue>
-                <ComplexOffersCardKey>Стоимость</ComplexOffersCardKey>от 20.3 до
-                84.2 млн руб
-              </ComplexOffersCardValue>
+            <Card>
+              <CardTitle>1-комнатные квартиры</CardTitle>
+              <CardValue>
+                <CardKey>Площадь</CardKey>от 59 до 120 м²
+              </CardValue>
+              <CardValue>
+                <CardKey>Стоимость</CardKey>от 20.3 до 84.2 млн руб
+              </CardValue>
               <OffersBtn>Посмотреть предложения</OffersBtn>
-            </ComplexOffersCard>
+            </Card>
           </Col>
           <Col md={4}>
-            <ComplexOffersCard>
-              <ComplexOffersCardTitle>
-                2-комнатные квартиры
-              </ComplexOffersCardTitle>
-              <ComplexOffersCardValue>
-                <ComplexOffersCardKey>Площадь</ComplexOffersCardKey>от 59 до 120
-                м²
-              </ComplexOffersCardValue>
-              <ComplexOffersCardValue>
-                <ComplexOffersCardKey>Стоимость</ComplexOffersCardKey>от 20.3 до
-                84.2 млн руб
-              </ComplexOffersCardValue>
+            <Card>
+              <CardTitle>2-комнатные квартиры</CardTitle>
+              <CardValue>
+                <CardKey>Площадь</CardKey>от 59 до 120 м²
+              </CardValue>
+              <CardValue>
+                <CardKey>Стоимость</CardKey>от 20.3 до 84.2 млн руб
+              </CardValue>
               <OffersBtn>Посмотреть предложения</OffersBtn>
-            </ComplexOffersCard>
+            </Card>
           </Col>
           <Col md={4}>
-            <ComplexOffersCard>
-              <ComplexOffersCardTitle>
-                3-комнатные квартиры
-              </ComplexOffersCardTitle>
-              <ComplexOffersCardValue>
-                <ComplexOffersCardKey>Площадь</ComplexOffersCardKey>от 59 до 120
-                м²
-              </ComplexOffersCardValue>
-              <ComplexOffersCardValue>
-                <ComplexOffersCardKey>Стоимость</ComplexOffersCardKey>от 20.3 до
-                84.2 млн руб
-              </ComplexOffersCardValue>
+            <Card>
+              <CardTitle>3-комнатные квартиры</CardTitle>
+              <CardValue>
+                <CardKey>Площадь</CardKey>от 59 до 120 м²
+              </CardValue>
+              <CardValue>
+                <CardKey>Стоимость</CardKey>от 20.3 до 84.2 млн руб
+              </CardValue>
               <OffersBtn>Посмотреть предложения</OffersBtn>
-            </ComplexOffersCard>
+            </Card>
           </Col>
         </Row>
       </Grid>
