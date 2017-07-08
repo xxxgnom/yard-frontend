@@ -1,8 +1,8 @@
 //import React from 'react';
-import React, {Component} from 'react';
-import Banner from './Banner';
-import Contact from './Contact';
-import Cards from './Cards';
+import React, { Component } from "react";
+import Banner from "./Banner";
+import Contact from "./Contact";
+import Cards from "./Cards";
 import styled from "styled-components";
 
 const Main = styled.div`
@@ -14,11 +14,11 @@ const Main = styled.div`
 export default () => {
   return (
     <div>
-    <Banner/>
+      <Banner />
       <Main>
-        <Contact/>
-        <Cards/>
+        <Contact />
+        <Cards />
       </Main>
-      </div>
+    </div>
   );
 };

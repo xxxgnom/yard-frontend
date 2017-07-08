@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Card = styled(Link)`
-  display: flex;
-  margin-bottom: 3rem;
-  background-color: #ffffff;
-  cursor: pointer;
-  text-decoration: none;
+display: flex;
+margin-bottom: 3rem;
+background-color: #ffffff;
+cursor: pointer;
+text-decoration: none;
 
-  &:hover {
-    box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.3);
-  }
+&:hover {
+  box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.3);
+}
 `;
 
 const Info = styled.article`
@@ -53,13 +53,16 @@ const Description = styled.p`
 const Image = styled.img``;
 
 function CardShow(props) {
-    return (
-      <Card to="/complexes/id">
-        <Image src="bitmap.jpg" alt="building preview" />
-        <Info>
-          <Location>
-            {props.title}
-          </Location>
+  return (
+    <Card to="/complexes/id">
+      <Image
+        src={process.env.PUBLIC_URL + "/bitmap.jpg"}
+        alt="building preview"
+      />
+      <Info>
+        <Location>
+          {props.title}
+        </Location>
         <Address>
           {props.address}
         </Address>
