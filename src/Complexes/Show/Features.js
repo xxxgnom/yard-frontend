@@ -1,5 +1,5 @@
 //import React from 'react';
-import React, {Component} from 'react';
+import React, { Component } from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
@@ -9,9 +9,7 @@ const ComplexInfo = styled.section`
   padding-top: 1.6rem;
   padding-bottom: 1rem;
 `;
-const ComplexInfoBlock = styled.div`
-  margin-right: 4rem;
-`;
+const ComplexInfoBlock = styled.div`margin-right: 4rem;`;
 const ComplexInfoBlockTitle = styled.h2`
   margin: 0;
   font-family: Philosopher, sans-serif;
@@ -28,24 +26,34 @@ const ComplexInfoBlockDescription = styled.h2`
   line-height: 1.57;
   color: #a9afb6;
 `;
-const Stripe = styled.div`
-border-top: solid 1px #e0e0e1;
-`;
+const Stripe = styled.div`border-top: solid 1px #e0e0e1;`;
 function FeauturesShow(props) {
   return (
     <Grid>
-    <ComplexInfo>
-      <ComplexInfoBlock>
-        <ComplexInfoBlockTitle>950<ComplexInfoBlockDescription>предложений</ComplexInfoBlockDescription></ComplexInfoBlockTitle>
-      </ComplexInfoBlock>
-      <ComplexInfoBlock>
-        <ComplexInfoBlockTitle>John McAslan + Partners<ComplexInfoBlockDescription>архитектор</ComplexInfoBlockDescription></ComplexInfoBlockTitle>
-      </ComplexInfoBlock>
-      <ComplexInfoBlock>
-        <ComplexInfoBlockTitle>Группа «ПСН»<ComplexInfoBlockDescription>застройщик</ComplexInfoBlockDescription></ComplexInfoBlockTitle>
-      </ComplexInfoBlock>
-    </ComplexInfo>
-    <Stripe/>
+      <ComplexInfo>
+        <ComplexInfoBlock>
+          <ComplexInfoBlockTitle>
+            950<ComplexInfoBlockDescription>
+              предложений
+            </ComplexInfoBlockDescription>
+          </ComplexInfoBlockTitle>
+        </ComplexInfoBlock>
+        <ComplexInfoBlock>
+          <ComplexInfoBlockTitle>
+            John McAslan + Partners<ComplexInfoBlockDescription>
+              архитектор
+            </ComplexInfoBlockDescription>
+          </ComplexInfoBlockTitle>
+        </ComplexInfoBlock>
+        <ComplexInfoBlock>
+          <ComplexInfoBlockTitle>
+            Группа «ПСН»<ComplexInfoBlockDescription>
+              застройщик
+            </ComplexInfoBlockDescription>
+          </ComplexInfoBlockTitle>
+        </ComplexInfoBlock>
+      </ComplexInfo>
+      <Stripe />
     </Grid>
   );
 }

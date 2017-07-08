@@ -66,10 +66,10 @@ const OffersBtn = styled.button`
 function OffersShow(props) {
   return (
     <ComplexOffers>
-      <div className="container">
+      <Grid>
         <ComplexOffersTitle>Предложения в ЖК «Полянка/44»</ComplexOffersTitle>
-        <div className="row">
-          <div className="col-xs-4">
+        <Row>
+          <Col md={4}>
             <ComplexOffersCard>
               <ComplexOffersCardTitle>
                 1-комнатные квартиры
@@ -84,8 +84,8 @@ function OffersShow(props) {
               </ComplexOffersCardValue>
               <OffersBtn>Посмотреть предложения</OffersBtn>
             </ComplexOffersCard>
-          </div>
-          <div className="col-xs-4">
+          </Col>
+          <Col md={4}>
             <ComplexOffersCard>
               <ComplexOffersCardTitle>
                 2-комнатные квартиры
@@ -100,8 +100,8 @@ function OffersShow(props) {
               </ComplexOffersCardValue>
               <OffersBtn>Посмотреть предложения</OffersBtn>
             </ComplexOffersCard>
-          </div>
-          <div className="col-xs-4">
+          </Col>
+          <Col md={4}>
             <ComplexOffersCard>
               <ComplexOffersCardTitle>
                 3-комнатные квартиры
@@ -116,9 +116,9 @@ function OffersShow(props) {
               </ComplexOffersCardValue>
               <OffersBtn>Посмотреть предложения</OffersBtn>
             </ComplexOffersCard>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Grid>
     </ComplexOffers>
   );
 }

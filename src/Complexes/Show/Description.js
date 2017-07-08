@@ -26,12 +26,12 @@ const ComplexDescriptionText = styled.p`
 function DescriptionShow(props) {
   return (
     <ComplexDescription>
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-2">
+      <Grid>
+        <Row>
+          <Col md={2}>
             <ComplexDescriptionTitle>Описание</ComplexDescriptionTitle>
-          </div>
-          <div className="col-xs-10">
+          </Col>
+          <Col md={10}>
             <ComplexDescriptionText>
               ВТБ Арена Парк — современный квартал в 10 минутах езды от Кремля.
               Территория разделена на три зоны: жилой район, центральный стадион
@@ -62,9 +62,9 @@ function DescriptionShow(props) {
               для взрослых — велосипедные дорожки и зоны отдыха, где можно
               подышать свежим воздухом во время рабочего перерыва.
             </ComplexDescriptionText>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Grid>
     </ComplexDescription>
   );
 }

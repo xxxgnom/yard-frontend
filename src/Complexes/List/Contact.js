@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid, Row } from "react-flexbox-grid";
 import styled from "styled-components";
 
 const ContactTitle = styled.h2`
@@ -8,6 +9,7 @@ const ContactTitle = styled.h2`
   font-weight: bold;
   color: #3e4247;
 `;
+const Contact = styled.div`width: 804px;`;
 const ContactText = styled.p`
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -28,9 +30,9 @@ const ContactBtn = styled.button`
 
 function Contactshow(props) {
   return (
-    <div className="container">
-      <div className="row center-xs">
-        <div className="col-xs-8">
+    <Grid>
+      <Row center="md">
+        <Contact>
           <ContactTitle>Discover Our New Developments</ContactTitle>
           <ContactText>
             Compass brings a modern approach to new development marketing and
@@ -38,9 +40,9 @@ function Contactshow(props) {
             condominiums, browse our portfolio of current offerings.
           </ContactText>
           <ContactBtn href="#">Contact the team</ContactBtn>
-        </div>
-      </div>
-    </div>
+        </Contact>
+      </Row>
+    </Grid>
   );
 }
 export default Contactshow;

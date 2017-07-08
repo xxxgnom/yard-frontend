@@ -10,7 +10,7 @@ const ComplexLandmark = styled.section`
   background-color: #3e4247;
   color: #ffffff;
 `;
-const ComplexLandmarkName = styled.h5`
+const Name = styled.h5`
   margin: 0;
   margin-top: 7.45rem;
   margin-bottom: 3.1rem;
@@ -19,7 +19,7 @@ const ComplexLandmarkName = styled.h5`
   font-weight: 700;
   color: #a9afb6;
 `;
-const ComplexLandmarkTitle = styled.h2`
+const Title = styled.h2`
   margin: 0;
   margin-bottom: 3.2rem;
   font-family: Philosopher, sans-serif;
@@ -28,32 +28,31 @@ const ComplexLandmarkTitle = styled.h2`
   line-height: 1.25;
   color: #ffffff;
 `;
-const ComplexLandmarkLink = styled.a`
+const GuideLink = styled.a`
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   color: #00779a;
   text-decoration: none;
 `;
-const ComplexLandmarkMap = styled.img`
+const MapMark = styled.img`
   position: absolute;
   margin-top: 3.8rem;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 `;
-const ComplexLandmarkNearby = styled.div`
+const Nearby = styled.div`
   position: absolute;
   width: 583px;
   margin-top: 3.8rem;
   background-color: #ffffff;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 `;
-const ComplexLandmarkNearbyItem = styled.div`
+const NearbyItem = styled.div`
   padding: 1.5rem;
   padding-bottom: 1.57rem;
   box-sizing: border-box;
   border-bottom: solid 1px #e0e0e1;
 `;
-const ComplexLandmarkNearbyItemLastChild = styled.section`border-bottom: 0;`;
-const ComplexLandmarkNearbyPlace = styled.h6`
+const NearbyPlace = styled.h6`
   display: block;
   margin: 0;
   margin-bottom: 0.5rem;
@@ -62,7 +61,7 @@ const ComplexLandmarkNearbyPlace = styled.h6`
   line-height: 1.38;
   color: #3e4247;
 `;
-const ComplexLandmarkNearbyDistance = styled.p`
+const NearbyDistance = styled.p`
   display: block;
   margin: 0;
   font-size: 16px;
@@ -72,60 +71,44 @@ const ComplexLandmarkNearbyDistance = styled.p`
 function GuideShow(props) {
   return (
     <ComplexLandmark>
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-6">
-            <ComplexLandmarkName>Якиманка</ComplexLandmarkName>
-            <ComplexLandmarkTitle>
+      <Grid>
+        <Row>
+          <Col md={6}>
+            <Name>Якиманка</Name>
+            <Title>
               Исторический центр Москвы в двух<br /> километрах от Кремля
-            </ComplexLandmarkTitle>
-            <ComplexLandmarkLink>Гид по Якиманке →</ComplexLandmarkLink>
-          </div>
-          <div className="col-xs-6">
+            </Title>
+            <GuideLink>Гид по Якиманке →</GuideLink>
+          </Col>
+          <Col md={6}>
             <img
               src={process.env.PUBLIC_URL + "/polyanka-photo.jpg"}
               alt="Полянка"
-              className="ComplexLandmark-img"
             />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-6">
-            <ComplexLandmarkMap
-              src={process.env.PUBLIC_URL + "/map.png"}
-              alt="Карта"
-            />
-          </div>
-          <div className="col-xs-6">
-            <ComplexLandmarkNearby>
-              <ComplexLandmarkNearbyItem>
-                <ComplexLandmarkNearbyPlace>
-                  Красный Октябрь
-                </ComplexLandmarkNearbyPlace>
-                <ComplexLandmarkNearbyDistance>
-                  24 минуты, 6 км
-                </ComplexLandmarkNearbyDistance>
-              </ComplexLandmarkNearbyItem>
-              <ComplexLandmarkNearbyItem>
-                <ComplexLandmarkNearbyPlace>
-                  World class
-                </ComplexLandmarkNearbyPlace>
-                <ComplexLandmarkNearbyDistance>
-                  2 минуты, 300 м
-                </ComplexLandmarkNearbyDistance>
-              </ComplexLandmarkNearbyItem>
-              <ComplexLandmarkNearbyItem>
-                <ComplexLandmarkNearbyPlace>
-                  Третьяковская галерея
-                </ComplexLandmarkNearbyPlace>
-                <ComplexLandmarkNearbyDistance>
-                  14 минут, 4 км
-                </ComplexLandmarkNearbyDistance>
-              </ComplexLandmarkNearbyItem>
-            </ComplexLandmarkNearby>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6}>
+            <MapMark src={process.env.PUBLIC_URL + "/map.png"} alt="Карта" />
+          </Col>
+          <Col md={6}>
+            <Nearby>
+              <NearbyItem>
+                <NearbyPlace>Красный Октябрь</NearbyPlace>
+                <NearbyDistance>24 минуты, 6 км</NearbyDistance>
+              </NearbyItem>
+              <NearbyItem>
+                <NearbyPlace>World class</NearbyPlace>
+                <NearbyDistance>2 минуты, 300 м</NearbyDistance>
+              </NearbyItem>
+              <NearbyItem>
+                <NearbyPlace>Третьяковская галерея</NearbyPlace>
+                <NearbyDistance>14 минут, 4 км</NearbyDistance>
+              </NearbyItem>
+            </Nearby>
+          </Col>
+        </Row>
+      </Grid>
     </ComplexLandmark>
   );
 }

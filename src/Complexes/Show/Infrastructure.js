@@ -24,32 +24,32 @@ const ComplexServicesItem = styled.div`
 function InfrastructureShow(props) {
   return (
     <ComplexServices>
-      <div className="container">
+      <Grid>
         <ComplexServicesTitle>Инфраструктура</ComplexServicesTitle>
-        <div className="row">
-          <div className="col-xs-2">
+        <Row>
+          <Col md={2}>
             <ComplexServicesItem>Бассейн</ComplexServicesItem>
             <ComplexServicesItem>Частная школа</ComplexServicesItem>
-          </div>
-          <div className="col-xs-2">
+          </Col>
+          <Col md={2}>
             <ComplexServicesItem>Детский сад</ComplexServicesItem>
             <ComplexServicesItem>Частная школа</ComplexServicesItem>
-          </div>
-          <div className="col-xs-2">
+          </Col>
+          <Col md={2}>
             <ComplexServicesItem>Частная школа</ComplexServicesItem>
             <ComplexServicesItem>Частная школа</ComplexServicesItem>
-          </div>
-          <div className="col-xs-2">
+          </Col>
+          <Col md={2}>
             <ComplexServicesItem>Бассейн</ComplexServicesItem>
-          </div>
-          <div className="col-xs-2">
+          </Col>
+          <Col md={2}>
             <ComplexServicesItem>Детский сад</ComplexServicesItem>
-          </div>
-          <div className="col-xs-2">
+          </Col>
+          <Col md={2}>
             <ComplexServicesItem>Частная школа</ComplexServicesItem>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Grid>
     </ComplexServices>
   );
 }
