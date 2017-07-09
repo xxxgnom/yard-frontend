@@ -1,5 +1,6 @@
 //import React from 'react';
 import React, { Component } from "react";
+import { Grid, Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
 import Title from "./Title";
 import Gallery from "./Gallery";
@@ -16,11 +17,11 @@ export default () => {
   return (
     <main>
       <TitleStripe>
-        <div className="container">
-          <div className="row between-xs">
+        <Grid>
+          <Row between="xs">
             <Title />
-          </div>
-        </div>
+          </Row>
+        </Grid>
       </TitleStripe>
       <Gallery />
       <Features />

@@ -67,7 +67,7 @@ function CardShow(props) {
           {props.address}
         </Address>
         <Description>
-          {props.description}
+          {props.children}
         </Description>
       </Info>
     </Card>

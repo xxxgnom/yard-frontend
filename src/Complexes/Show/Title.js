@@ -34,7 +34,7 @@ function TitleShow(props) {
   return (
     <Grid>
       <Row between="md">
-        <article className="complex-location">
+        <article>
           <Name>Жилой комплекс «Полянка/44»</Name>
           <Adress>
             Район Якиманка, улица Большая Полянка, дом 44 • 119180

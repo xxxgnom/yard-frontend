@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Grid, Row, Col } from "react-flexbox-grid";
+import RightArrow from "./img/combined-shape.svg";
 
 const Footer = styled.footer`
   padding-top: 2rem;
@@ -31,14 +33,14 @@ text-decoration: none;
 const FooterLinkLast = styled(FooterLink)`
 margin-top: 1.5rem;
 `;
-const FooterText = styled.p`
+const Text = styled.p`
   margin-bottom: 1rem;
   font-size: 14px;
   font-weight: 300;
   color: #a9afb6;
 `;
 
-const FooterTextLast = styled.p`margin-top: 1.5rem;`;
+const TextLast = styled.p`margin-top: 1.5rem;`;
 const FooterDisclaimer = styled.p`
   padding-top: 4.5rem;
   font-size: 11px;
@@ -46,7 +48,7 @@ const FooterDisclaimer = styled.p`
   line-height: 1.6;
   color: #a9afb6;
 `;
-const FooterNav = styled.nav`
+const Nav = styled.nav`
   padding-top: 1rem;
   border-top: solid 2px #3e4247;
 `;
@@ -54,48 +56,46 @@ const FooterNav = styled.nav`
 export default () => {
   return (
     <Footer>
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-4">
-            <div className="footer-company">
+      <Grid>
+        <Row>
+          <Col md={4}>
+            <div>
               <Title>ООО «Ярд»</Title>
-              <FooterText>ОГРН 1175074002531</FooterText>
-              <FooterText>ИНН 5036165365</FooterText>
-              <FooterTextLast>+7 (999) 821-14-88</FooterTextLast>
+              <Text>ОГРН 1175074002531</Text>
+              <Text>ИНН 5036165365</Text>
+              <TextLast>+7 (999) 821-14-88</TextLast>
             </div>
-          </div>
-          <div className="col-xs-2">
-            <FooterNav>
+          </Col>
+          <Col md={2}>
+            <Nav>
               <Title>Жилые комплексы</Title>
               <FooterLink to="/">ВТБ Арена Парк</FooterLink>
               <FooterLink to="/">Садовые кварталы</FooterLink>
               <FooterLink to="/">Резиденция Монэ</FooterLink>
               <FooterLinkLast to="/">
-                Все ЖК Москвы{" "}
-                <img src={process.env.PUBLIC_URL + "/combined-shape.svg"} />
+                Все ЖК Москвы <img src={RightArrow} alt="RightArrow" />
               </FooterLinkLast>
-              {/*<a className="footer-link footer-link-last" href="#">Все ЖК Москвы <img src="combined-shape.svg" className="blackstripelogo" /></a>*/}
-            </FooterNav>
-          </div>
-          <div className="col-xs-2">
-            <FooterNav>
+            </Nav>
+          </Col>
+          <Col md={2}>
+            <Nav>
               <Title>Компания</Title>
               <FooterLink to="/">Команда</FooterLink>
               <FooterLink to="/">О компании</FooterLink>
-            </FooterNav>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-8 col-xs-offset-4">
+            </Nav>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={8} mdOffset={4}>
             <FooterDisclaimer>
               Любая информация, представленная на данном сайте, носит
               исключительно информационный характер и ни при каких условиях не
               является публичной офертой, определяемой положениями статьи 437 ГК
               РФ. © ООО «Ярд», 2017
             </FooterDisclaimer>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Grid>
     </Footer>
   );
 };

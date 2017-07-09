@@ -6,7 +6,7 @@ import Cards from "./Cards";
 import styled from "styled-components";
 
 const Main = styled.div`
-  background-image: url(background-1.png);
+  background-image: url(../../background-1.png);
   background-repeat: repeat;
   padding-bottom: 2.8rem;
 `;

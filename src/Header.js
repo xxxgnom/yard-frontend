@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-//import ReactDOM from 'react-dom'
-//import React, {Component} from 'react';
+import { Grid, Row, Col } from "react-flexbox-grid";
+import compassLogo from "./img/compass-logo.svg";
+
 const Header = styled.header`
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -17,7 +18,7 @@ const Header = styled.header`
 `;
 const Navigations = styled.nav`text-align: right;`;
 const Navigation = styled(Link)`
-margin-right: 1.5rem;
+padding-left: 1.5rem;
 font-size: 1rem;
 color: #3e4247;
 text-decoration: none;
@@ -25,9 +26,9 @@ text-decoration: none;
 function Headershow(props) {
   return (
     <Header>
-      <div className="container">
-        <div className="row middle-xs between-xs">
-          <img src={process.env.PUBLIC_URL + "/compass-logo.svg"} />
+      <Grid>
+        <Row middle="xs" between="xs">
+          <img src={compassLogo} alt="compass logo" />
           <Navigations>
             <Navigation to="/">
               {props.first}
@@ -39,8 +40,8 @@ function Headershow(props) {
               {props.third}
             </Navigation>
           </Navigations>
-        </div>
-      </div>
+        </Row>
+      </Grid>
     </Header>
   );
 }

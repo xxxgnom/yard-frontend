@@ -1,7 +1,7 @@
 //import React from 'react';
 import React, { Component } from "react";
 import styled from "styled-components";
-//import { Grid, Row, Col } from "react-flexbox-grid";
+import { Grid, Row, Col } from "react-flexbox-grid";
 
 const GalleryStripe = styled.div`
   display: flex;
@@ -26,33 +26,28 @@ function GalleryShow(props) {
       <GalleryStripe>
         <img
           src={process.env.PUBLIC_URL + "/gallery-img-1.jpg"}
-          alt
-          className="complex-gallery-item"
+          alt="gallery"
         />
         <img
           src={process.env.PUBLIC_URL + "/gallery-img-2.jpg"}
-          alt
-          className="complex-gallery-item"
+          alt="gallery"
         />
         <img
           src={process.env.PUBLIC_URL + "/gallery-img-3.jpg"}
-          alt
-          className="complex-gallery-item"
+          alt="gallery"
         />
         <img
           src={process.env.PUBLIC_URL + "/gallery-img-4.jpg"}
-          alt
-          className="complex-gallery-item"
+          alt="gallery"
         />
         <img
           src={process.env.PUBLIC_URL + "/gallery-img-5.jpg"}
-          alt
-          className="complex-gallery-item"
+          alt="gallery"
         />
       </GalleryStripe>
-      <div className="container">
+      <Grid>
         <PhotoCountBtn href="#">41 фотография</PhotoCountBtn>
-      </div>
+      </Grid>
     </div>
   );
 }
