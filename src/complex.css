@@ -1,20 +1,20 @@
-.complex{
+.complex {
   padding-top: 1.5rem;
   border-top: solid 1px #eaebf0; /* полоса сверху */
 }
-.complex-name{
+.complex-name {
   margin: 0; /* ставит впритык */
   font-family: 'Philosopher', sans-serif; /* выбор шрифта */
   font-weight: 700; /* толщина шрифта */
 }
-.complex-address{
+.complex-address {
   font-family: 'Fira Sans', sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #a9afb6; /* Цвет шрифта */
   line-height: 1.57; /* высота строки */
 }
-.favourite-btn{
+.favourite-btn {
   padding: 0.5rem 1rem;
   font-family: 'Fira Sans', sans-serif;
   font-size: 10px;
@@ -27,10 +27,10 @@
   border-radius: 2px;
   cursor: pointer;
 }
-.gallery-stripe{
+.gallery-stripe {
   display: flex;
 }
-.photo-count-btn{
+.photo-count-btn {
   position: absolute;
   margin-top: -2.5rem;
   padding: 0.5rem 1rem;
@@ -43,23 +43,23 @@
   border-radius: 2px;
   background-color: #00779a;
 }
-.complex-info{
+.complex-info {
   display: flex; /* блоки тянутся */
   flex-direction: row; /* блоки тянутся в ряд */
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
 }
-.complex-info-block{
+.complex-info-block {
   margin-right: 4rem; /* блоки внутри идут с отступом 4rem */
 }
-.complex-info-block-title{
+.complex-info-block-title {
   margin: 0;
   font-family: Philosopher, sans-serif;
   font-weight: 700;
   line-height: 1.12;
   color: #3e4247;
 }
-.complex-info-block-description{
+.complex-info-block-description {
   display: block; /* текст занимает всю ширину строки */
   margin-top: 0.6rem;
   font-family: 'Fira Sans', sans-serif;
@@ -68,7 +68,7 @@
   line-height: 1.57;
   color: #a9afb6;
 }
-.complex-allinfo{
+.complex-allinfo {
   padding-bottom: 1.5rem;
 }
 .complex-details-title {
@@ -81,7 +81,7 @@
   color: #3e4247;
   border-top: solid 1px #e0e0e1; /* полоса сверху */
 }
-.complex-details-list{
+.complex-details-list {
   padding-top: 0.5rem;
 }
 .complex-details-key {
